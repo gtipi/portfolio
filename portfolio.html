@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="en">
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="description" content="Roughly 155 characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Esto es parte de pruebas que hice mientras seguía los ejercicios de CSS en freeCodeCamp y Mozilla developers. 
+	   Me interesó la idea de generar estilos mediante variables. 
+	   Pero está en desarrollo, no estoy seguro de usarla bien aún.
+
+		:root{
+            --color_fondo: w3-win8-emerald;
+        }
+        .encabezado,
+        .editar {
+            background: var(--color_fondo);
+        */
+    </style>
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="w3-row-padding">
+            <img src="imagenes/APLogo-20-20.png" style="width: 12%">
+            <img src="imagenes/LogosInti.png" style="width: 12%">
+
+            <div class="w3-bar-item w3-button w3-right w3-wide" style="color: white; margin-top: 20px; width: auto">
+                <a style="text-decoration:none" href="#formularioContacto">contacto</a>
+            </div>
+            <div class="w3-bar-item w3-button w3-right w3-wide" style="color: white; margin-top: 20px; width: auto"
+                onmouseover="mOver(this)" onmouseout="mOut(this)">
+                redes sociales
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <div class="w3-light-grey">
+        
+        <img src="imagenes/iStock-1276483137.png" alt="biblioteca" class="w3-image w3-padding"
+            style="width: 100%; margin-bottom: 20px; max-height: 300px">
+            
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <div class="w3-white w3-card-4 w3-padding-16">
+                    <div class="w3-container"><i class="w3 row w3-third material-icons" style="font-size: 36px; margin-top: 5px">person</i>
+                        <h2 class="w3 row w3-twothird" style= "margin-left: -70px; margin-top: -1px">Gerardo Tipitto</h2><br><hr>
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text w3-white" ></i>Editor -
+                                Desarrollador web (en proceso)</p>
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text w3-white"></i>Buenos Aires,
+                                Argentina</p>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text w3-white"></i>gtipitto@gmail.com</p>
+                            <hr>
+
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text w3-white"></i>Sobre mi</b></p>
+                            <p>Nací y me crié en la provincia de Buenos Aires y vivo y trabajo en la Capital.<br>
+                                Fui cartero, librero y docente.<br>
+                                Estudié abogacía, pero no soy abogado.
+                                Estudié letras y tampoco soy licenciado.
+                            </p>
+                            <hr>
+
+                            <p class="w3-large"><b><i
+                                 class="fa fa-asterisk fa-fw w3-margin-right w3-text w3-white"></i>Habilidades</b>
+                            </p>
+                            <p>Desarrollo Front End </p>
+                            <div class= "w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-win8-emerald" style="width:70%">
+                                    70%</div>
+                            </div>
+                            <p>Back End</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-win8-emerald" style="width:50%">
+                                    <div class="w3-center w3-text-white">50%</div>
+                                </div>
+                            </div>
+                            <p>Aprendizaje autoguiado</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-win8-emerald" style="width:75%">
+                                    75%</div>
+                            </div>
+                            <hr>
+
+                            <p class="w3-large w3-text-theme"><b><i
+                                        class="fa fa-globe fa-fw w3-margin-right w3-text w3-white"></i>Idiomas</b></p>
+                            <p>Español <button class="w3-button w3-tiny w3-padding-small w3-circle w3-grey"
+                                    onclick="moveEsp()">+</button>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                </p>
+                                <div id="barra1" class="w3-round-large w3-center w3-win8-emerald"
+                                    style="width:100%">100%</div>
+                            </div>
+
+                            <p>Inglés <button class="w3-button w3-tiny w3-padding-small w3-circle w3-grey"
+                                    onclick="moveEn()">+</button></p>
+                            <div class="w3-light-grey w3-round-large w3-small">
+                                <div id="barra2" class="w3-round-large w3-center w3-win8-emerald"
+                                    style="width:70%">70%</div>
+                            </div>
+                    
+                    </div><br>
+            </div>
+        </div>
+
+
+                
+
+
+                <div class="w3-row w3-twothird">
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h2 class="w3-padding-16"><i
+                                class="fa fa-suitcase fa-fw w3-margin-right w3-xlarge w3-text w3-white"></i>
+                            Experiencia</h2>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>INTI - Ministerio de Desarrollo Productivo / Desarrollador Full
+                                    Stack</b></h5>
+                            <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-white w3-margin-right"></i>Agosto 2021
+                                <span class="w3-tag w3-win8-emerald w3-round w3-margin w3-padding">Actual</span>
+                            </h6>
+                            <p>Inicié la formación como desarrollador Full Stack en el marco de ArgentinaPrograma en
+                                agosto de 2021 y este proyecto web es parte del curso. </p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Dirección Técnica de Formación e Informática Jurídico-Legal (SAIJ)
+                                    - Ministerio de Justicia y Derechos Humanos de la Nación
+                                    / Editor. Corrector. Analista normativo.
+                                </b></h5>
+                            <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Junio 2010 <span
+                                    class="w3-tag w3-win8-emerald w3-round w3-margin w3-padding">Actual</span></h6>
+                            <p>Edité y correjí textos jurídicos para publicaciones periódicas en formato papel y
+                                digital.<br>
+                                Redacté y adapté textos jurídicos a la técnica de <a style="text-decoration:none"
+                                    class="w3-text-indigo"
+                                    href="https://www.argentina.gob.ar/justicia/lecturafacil">lectura fácil</a>.<br>
+                                Edité novedades legislativas provinciales y nacionales para el <i>newsletter</i> semanal
+                                del SAIJ.<br>
+                                Ingreso contenidos de jurisprudencia nacional y provincial a la base de datos SAIJ.</p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Revista de artes y letras <a style="text-decoration:none"
+                                        class="w3-text-indigo" href="https://www.revistaotraparte.com">Otra
+                                        Parte</a> / Editor</b></h5>
+                                        <h6 class="w3-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Julio 2013 <span
+                                            class="w3-tag w3-win8-emerald w3-round w3-margin w3-padding">Actual</span></h6>
+                                <p>Trabajo voluntario, colaborativo, no remunerado.<br>
+                                Reseño novedades de litertura argentina y co-edito el contenido de la sección.<br>
+                                Integro el <i>staff</i> permanente de la revista.</p><br>
+                        </div>
+                    </div>
+                </div> <br>
+            </div>
+        <div class="w3-container w3-padding">
+            <div class="w3-card w3-padding w3-white w3.margin-top w3-display-container w3-center">
+                <h2 class="w3-padding-16">
+                    <i class="fa fa-book" style="font-size:36px w3-margin-right"></i>
+                Publicaciones</h2>
+                <div class= "w3 container">
+                    <img class="mySlides" src="imagenes/ficcion2.jpg" style="width:30%; margin-bottom: 20px; margin-left: 400px">
+                    <img class="mySlides" src="imagenes/ensayo1.jpg"  style="width:50%; margin-bottom: 20px; margin-left: 250px">
+                        
+
+                <button class="w3-button w3-win8-emerald w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-win8-emerald w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>    
+            </div>
+        </div>
+
+
+            <div class="w3-container w3-center w3-padding">
+                <footer class="encabezado" id="formularioContacto">
+
+                    <h2 class="w3-wide">Contactame</h2>
+                    Email: gtipitto@gmail.com<br>
+                    <p class="w3-opacity w3-center">o dejame un cometario</p>
+
+                    <form action="/action_page.php" target="_blank">
+                        <input class="w3-input" type="text" placeholder="Nombre" required name="Nombre">
+                        <input class="w3-input" type="text" placeholder="Email" required name="Email">
+                        <input class="w3-input" type="text" placeholder="Texto" required name="Mensaje"><br>
+                        <button class="w3-button w3-black" type="submit">Enviar</button>
+                    </form>
+                    <p>Powered by GMT & <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+                </footer>
+            </div>
+
+            <script>
+                function mOver(obj) {
+                    obj.innerHTML = "¡apa! no estoy en redes"
+                }
+
+                function mOut(obj) {
+                    obj.innerHTML = "redes sociales"
+                }
+
+                function moveEsp() {
+                    var elem = document.getElementById("barra1");
+                    var width = 1;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                        if (width >= 100) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                        }
+                    }
+                }
+
+                function moveEn() {
+                    var elem = document.getElementById("barra2");
+                    var width = 2;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                        if (width >= 60) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                        }
+                    }
+                }
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+
+                /* Estas son funciones que probé para eventos en la página pero no logré que ninguna funcionara.
+               O si funcionaban, no me gustaba lo que ocurría :(
+        
+                         function displayText(texto) {
+                        document.getElementById("fotoPersonal").innerHTML="algun texto";
+                        }
+               
+               function inicio(x) {
+                 x.style.height = "32px";
+                 x.style.width = "32px";
+               }
+                           var x = document.getElementById("boton_redes");
+                           x.addEventListener("click", respuesta);
+                           x.addEventListener("click", inicio);
+               
+                           function respuesta() {
+                               alert("¡Apa!, no estoy en redes");
+                           }
+               
+                           function inicio() {
+                               alert("redes sociales");
+                           }
+                 */
+            </script>
+</body>
+
+</html>

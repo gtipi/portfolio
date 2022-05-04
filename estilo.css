@@ -1,0 +1,15 @@
+.encabezado {
+background-color: lightblue;
+margin-top: auto;
+margin-left: auto;
+margin-bottom: 10px;
+margin-right: auto;
+font-family: sans-serif;
+}
+
+:root{
+    --color_fondo: green;
+}
+.encabezado {
+    background: var(--color_fondo);
+}
